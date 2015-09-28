@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Movies>
+    <Movie>
+        <Imdb>tt1527186</Imdb>
+        <Title>Melancholia</Title>
+        <Director>Lars von Trier</Director>
+        <Year>2011</Year>
+        <Duration>136</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0060390</Imdb>
+        <Title>Fahrenheit 451</Title>
+        <Director>François Truffaut</Director>
+        <Year>1966</Year>
+        <Duration>112</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0062622</Imdb>
+        <Title>2001: A Space Odyssey</Title>
+        <Director>Stanley Kubrick</Director>
+        <Year>1968</Year>
+        <Duration>160</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0066921</Imdb>
+        <Title>A Clockwork Orange</Title>
+        <Director>Stanley Kubrick</Director>
+        <Year>1972</Year>
+        <Duration>136</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0069293</Imdb>
+        <Title>Solyaris</Title>
+        <Director>Andrei Tarkovsky</Director>
+        <Year>1972</Year>
+        <Duration>167</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0071129</Imdb>
+        <Title>Amarcord</Title>
+        <Director>Frederico Fellini</Director>
+        <Year>1973</Year>
+        <Duration>123</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0075686</Imdb>
+        <Title>Annie Hall</Title>
+        <Director>Woody Allen</Director>
+        <Year>1977</Year>
+        <Duration>93</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0079944</Imdb>
+        <Title>Stalker</Title>
+        <Director>Andrei Tarkovsky</Director>
+        <Year>1979</Year>
+        <Duration>163</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0081505</Imdb>
+        <Title>The Shining</Title>
+        <Director>Stanley Kubrick</Director>
+        <Year>1980</Year>
+        <Duration>144</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0101765</Imdb>
+        <Title>La double vie de Véronique</Title>
+        <Director>Krzysztof Kieslowski</Director>
+        <Year>1991</Year>
+        <Duration>98</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0113083</Imdb>
+        <Title>La Flor de mi Secreto</Title>
+        <Director>Pedro Almodovar</Director>
+        <Year>1995</Year>
+        <Duration>103</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt0457430</Imdb>
+        <Title>El Laberinto del Fauno</Title>
+        <Director>Guillermo del Toro</Director>
+        <Year>2006</Year>
+        <Duration>118</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt2190367</Imdb>
+        <Title>O Som ao Redor</Title>
+        <Director>Kleber Mendonça Filho</Director>
+        <Year>2012</Year>
+        <Duration>131</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt2076220</Imdb>
+        <Title>Holy Motors</Title>
+        <Director>Leos Carax</Director>
+        <Year>2012</Year>
+        <Duration>115</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt1937390</Imdb>
+        <Title>Nymphomaniac (Part I and 2)</Title>
+        <Director>Lars von Trier</Director>
+        <Year>2013</Year>
+        <Duration>330</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt1832382</Imdb>
+        <Title>Jodaeiye Nader az Simin</Title>
+        <Director>Asghar Farhadi</Director>
+        <Year>2011</Year>
+        <Duration>123</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt1705786</Imdb>
+        <Title>Un Cuento Chino</Title>
+        <Director>Sebastián Borensztein</Director>
+        <Year>2011</Year>
+        <Duration>93</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt1445520</Imdb>
+        <Title>Hearat Shulayim</Title>
+        <Director>Joseph Cedar</Director>
+        <Year>2011</Year>
+        <Duration>103</Duration>
+    </Movie>
+    <Movie>
+        <Imdb>tt1189073</Imdb>
+        <Title>La Piel que Habito</Title>
+        <Director>Pedro Almodovar</Director>
+        <Year>2011</Year>
+        <Duration>120</Duration>
+    </Movie>
+</Movies>
+
