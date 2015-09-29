@@ -19,7 +19,7 @@ import javax.naming.InitialContext;
 public class EndpointExample {
 
 	private File dataFile = null;
-	private File directory = new File("/tmp/inbox");
+	private File directory = new File("/tmp/jms/inbox");
 
 	public void start() {
 		System.out.print("Waiting for file:");
