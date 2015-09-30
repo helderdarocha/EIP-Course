@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3.solution;
+package br.com.argonavis.eipcourse.exercises.ch4;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -63,11 +63,12 @@ public class FileOutboundAdapter implements MessageListener {
 				.lookup("ConnectionFactory");
 		
 		// Destination queue = (Destination) ctx.lookup("outbound"); // exercise 4 & 5
-		Destination queue = (Destination) ctx.lookup("png-queue"); // exercise 6
+		// Destination queue = (Destination) ctx.lookup("png-queue"); // exercise 6
+		Destination topic = (Destination) ctx.lookup("?????"); // Exercise 2 & 6: file-topic or file-queue?
 		Connection con = factory.createConnection();
 		con.start();
 		
-		FileOutboundAdapter adapter = new FileOutboundAdapter(con, queue, new File(OUTBOX));
+		FileOutboundAdapter adapter = new FileOutboundAdapter(con, topic, new File(OUTBOX));
 
 		System.out.println("Waiting for 60 seconds...");
 		Thread.sleep(60000);

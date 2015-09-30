@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3.solution;
+package br.com.argonavis.eipcourse.exercises.ch4.solution;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,10 +47,10 @@ public class JMSMessageHeaderRouter implements MessageListener{
 			// route to valid channel or redirect to invalid-message-channel
 			if(out != null) {
 				producer = session.createProducer(out);
-				producer.send(message);
 			} else {
-				System.out.println("Message not routed. No route for "+headerName+"="+routingHeader);
+				producer = session.createProducer(invalidChannel);
 			}
+			producer.send(message);
 			
 		} catch (JMSException e) {
 			e.printStackTrace();
