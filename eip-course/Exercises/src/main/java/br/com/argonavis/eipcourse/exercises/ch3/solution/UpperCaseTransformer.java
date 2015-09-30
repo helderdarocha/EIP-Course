@@ -16,7 +16,7 @@ public class UpperCaseTransformer {
 					.lookup("ConnectionFactory");
 			con = factory.createConnection();
 			
-			Destination from = (Destination) ctx.lookup("inbound");
+			Destination from = (Destination) ctx.lookup("txt-queue"); // only txt files should be here
 			Destination to = (Destination) ctx.lookup("outbound");
 
 			new JMSChannelBridge(con, from, to, new PayloadProcessor() {
