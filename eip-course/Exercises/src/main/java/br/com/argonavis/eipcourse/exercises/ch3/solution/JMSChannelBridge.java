@@ -11,6 +11,8 @@ import javax.jms.MessageListener;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
 
+import br.com.argonavis.eipcourse.exercises.utils.JMSUtils;
+
 public class JMSChannelBridge implements MessageListener {
 	private Session session;
 	private MessageProducer producer;

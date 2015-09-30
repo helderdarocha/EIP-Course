@@ -17,6 +17,9 @@ import javax.jms.Session;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
+import br.com.argonavis.eipcourse.exercises.utils.FileUtils;
+import br.com.argonavis.eipcourse.exercises.utils.JMSUtils;
+
 public class FileOutboundAdapter implements MessageListener {
 	
 	public static String OUTBOX = "/tmp/jms/outbox";

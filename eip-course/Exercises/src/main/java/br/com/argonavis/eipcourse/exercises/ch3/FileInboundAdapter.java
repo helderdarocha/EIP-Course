@@ -18,6 +18,8 @@ import javax.jms.Session;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
+import br.com.argonavis.eipcourse.exercises.utils.FileUtils;
+
 public class FileInboundAdapter {
 	
 	public static String INBOX = "/tmp/jms/inbox";
