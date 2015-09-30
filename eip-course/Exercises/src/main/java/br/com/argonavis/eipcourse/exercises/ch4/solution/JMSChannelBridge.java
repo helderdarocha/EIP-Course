@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3;
+package br.com.argonavis.eipcourse.exercises.ch4.solution;
 
 import java.util.Map;
 
@@ -17,17 +17,31 @@ public class JMSChannelBridge implements MessageListener {
 	private Session session;
 	private MessageProducer producer;
 	private MessageConsumer consumer;
-	private PayloadProcessor processor;
+	private PayloadProcessor payloadProcessor;
+	private PropertiesProcessor propertiesProcessor;
 
-	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor processor)
+	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor payloadProcessor, PropertiesProcessor propertiesProcessor)
 			throws JMSException {
 		System.out.println("Creating bridge from " + in + " to " + out);
-		this.processor = processor;
+		this.payloadProcessor = payloadProcessor;
+		this.propertiesProcessor = propertiesProcessor;
 		session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		producer = session.createProducer(out);
 		consumer = session.createConsumer(in);
 		consumer.setMessageListener(this);
 		con.start();
+	}
+	
+	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor payloadProcessor) throws JMSException {
+    	this(con, in, out, payloadProcessor, new PropertiesProcessor());
+	}
+	
+	public JMSChannelBridge(Connection con, Destination in, Destination out, PropertiesProcessor propertiesProcessor) throws JMSException {
+    	this(con, in, out, new PayloadProcessor(), propertiesProcessor);
+	}
+	
+    public JMSChannelBridge(Connection con, Destination in, Destination out) throws JMSException {
+    	this(con, in, out, new PayloadProcessor(), new PropertiesProcessor());
 	}
 
 	@Override
@@ -38,11 +52,13 @@ public class JMSChannelBridge implements MessageListener {
 			Map<String, Object> properties = JMSUtils.getMessageProperties(incomingMessage);
 			
 			// Do something with the data
-			Object newPayload = processor.process(payload);
+			Object newPayload = payloadProcessor.process(payload);
+			Map<String, Object> newProperties = propertiesProcessor.process(properties);
+			
 
 			// Publish new outgoing message
 			Message outgoingMessage = JMSUtils.createMessageWithPayload(session, newPayload);
-			JMSUtils.setMessageProperties(outgoingMessage, properties);
+			JMSUtils.setMessageProperties(outgoingMessage, newProperties);
 			producer.send(outgoingMessage);
 			
 		} catch (JMSException e) {

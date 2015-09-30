@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3.solution;
+package br.com.argonavis.eipcourse.exercises.ch4;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -7,7 +7,7 @@ import javax.jms.JMSException;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-public class MessagingBridge {
+public class UpperCaseTransformer {
 	public static void main(String[] args) {
 		Connection con = null;
 		try {
@@ -16,22 +16,20 @@ public class MessagingBridge {
 					.lookup("ConnectionFactory");
 			con = factory.createConnection();
 			
-			/*
-			// Exercicio 5 - Interligar inbound a outbound
-			Destination from = (Destination) ctx.lookup("inbound");
-			Destination to   = (Destination) ctx.lookup("outbound");
-			*/
+			Destination from = (Destination) ctx.lookup("txt-queue"); // only txt files should be here
+			// Destination to = (Destination) ctx.lookup("printable-queue"); 
+			Destination to = (Destination) ctx.lookup("printable-topic"); // Exercise 4.2 and 4.5
 
-			// Exercicio 6 - Canais de texto para saida de impressao
-			Destination from = (Destination) ctx.lookup("xml-queue");
-			Destination to   = (Destination) ctx.lookup("printable-queue");
+			new JMSChannelBridge(con, from, to, new PayloadProcessor() {
+				public Object process(Object payload) {
+					String text = (String)payload;
+					return text.toUpperCase();
+				}
+			});
 			
-			new JMSChannelBridge(con, from, to, new PayloadProcessor());
-
 			System.out.println("Receiving messages for 60 seconds...");
 			Thread.sleep(60000);
 			System.out.println("Done.");
-			con.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();

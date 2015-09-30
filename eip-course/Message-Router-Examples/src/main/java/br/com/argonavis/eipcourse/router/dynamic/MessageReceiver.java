@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.router.aggregator;
+package br.com.argonavis.eipcourse.router.dynamic;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
