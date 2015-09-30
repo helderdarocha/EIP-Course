@@ -12,6 +12,8 @@ import javax.jms.TextMessage;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
+import br.com.argonavis.eipcourse.exercises.utils.MockData;
+
 public class MockMessageProducer {
 
 	private Connection con;
