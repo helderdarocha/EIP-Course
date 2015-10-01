@@ -48,8 +48,8 @@ public class SolarSystemMessageSplitter implements MessageListener {
 					for(int i = 0; i < splitPayload.size(); i++) {
 						TextMessage newMessage = session.createTextMessage(splitPayload.get(i));
 						newMessage.setJMSCorrelationID(messageID); // ID of first message is SequenceID
-						newMessage.setLongProperty("SequencePosition", i+1);
-						newMessage.setLongProperty("SequenceSize", splitPayload.size());
+						newMessage.setIntProperty("SequencePosition", i+1);
+						newMessage.setIntProperty("SequenceSize", splitPayload.size());
 						newMessage.setStringProperty("Type", "Solar System Fragment");
 						producer.send(newMessage);
 					}

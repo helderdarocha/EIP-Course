@@ -19,7 +19,7 @@ public class XMLUtils {
 		StringWriter writer = new StringWriter();
 		Transformer transformer = TransformerFactory.newInstance().newTransformer();
 		transformer.transform(new DOMSource(node), new StreamResult(writer));
-		return writer.toString();
+		return writer.toString().replaceAll("\\<\\?xml(.+?)\\?\\>", "").trim();
 	}
 	
 	public static String loadFile(String filename) throws IOException {
