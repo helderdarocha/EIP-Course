@@ -1,4 +1,6 @@
-package br.com.argonavis.eipcourse.exercises.ch3.solution;
+package br.com.argonavis.eipcourse.exercises.ch4.solution;
+
+import java.util.Map;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -16,17 +18,21 @@ public class MessagingBridge {
 					.lookup("ConnectionFactory");
 			con = factory.createConnection();
 			
-			/*
-			// Exercicio 5 - Interligar inbound a outbound
-			Destination from = (Destination) ctx.lookup("inbound");
-			Destination to   = (Destination) ctx.lookup("outbound");
-			*/
-
-			// Exercicio 6 - Canais de texto para saida de impressao
-			Destination from = (Destination) ctx.lookup("xml-queue");
-			Destination to   = (Destination) ctx.lookup("printable-queue");
+			// Bridge 1 - XML files can be printed
+			Destination from1 = (Destination) ctx.lookup("xml-queue");
+			Destination to1   = (Destination) ctx.lookup("printable-topic");
+			new JMSChannelBridge(con, from1, to1);
 			
-			new JMSChannelBridge(con, from, to, new PayloadProcessor());
+			// Bridge 2 - Printable files can be saved
+			Destination from2 = (Destination) ctx.lookup("printable-topic");
+			Destination to2   = (Destination) ctx.lookup("file-topic");
+			new JMSChannelBridge(con, from2, to2);
+			
+			// Bridge 3 - PNG files can be saved
+			Destination from3 = (Destination) ctx.lookup("png-queue");
+			Destination to3   = (Destination) ctx.lookup("file-topic");
+			new JMSChannelBridge(con, from3, to3);
+			
 
 			System.out.println("Receiving messages for 60 seconds...");
 			Thread.sleep(60000);

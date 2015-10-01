@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3.solution;
+package br.com.argonavis.eipcourse.exercises.ch4;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -49,6 +49,7 @@ public class JMSMessageHeaderRouter implements MessageListener{
 				producer = session.createProducer(out);
 				producer.send(message);
 			} else {
+				// Exercicio 4 - envie para invalid-queue em vez de imprimir esta mensagem
 				System.out.println("Message not routed. No route for "+headerName+"="+routingHeader);
 			}
 			

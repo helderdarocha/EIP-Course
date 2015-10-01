@@ -17,6 +17,9 @@ import javax.jms.Session;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
+import br.com.argonavis.eipcourse.exercises.utils.FileUtils;
+import br.com.argonavis.eipcourse.exercises.utils.JMSUtils;
+
 public class FileOutboundAdapter implements MessageListener {
 	
 	public static String OUTBOX = "/tmp/jms/outbox";
@@ -59,7 +62,8 @@ public class FileOutboundAdapter implements MessageListener {
 		ConnectionFactory factory = (ConnectionFactory) ctx
 				.lookup("ConnectionFactory");
 		
-		Destination queue = (Destination) ctx.lookup("outbound");
+		// Destination queue = (Destination) ctx.lookup("outbound"); // exercise 4 & 5
+		Destination queue = (Destination) ctx.lookup("png-queue"); // exercise 6
 		Connection con = factory.createConnection();
 		con.start();
 		

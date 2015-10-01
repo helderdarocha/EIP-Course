@@ -1,9 +1,10 @@
-package br.com.argonavis.eipcourse.exercises.ch3.solution;
+package br.com.argonavis.eipcourse.exercises.ch4.solution;
 
 import java.util.List;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
+import javax.jms.DeliveryMode;
 import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageProducer;
@@ -11,6 +12,8 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.Context;
 import javax.naming.InitialContext;
+
+import org.apache.activemq.Message;
 
 import br.com.argonavis.eipcourse.exercises.utils.MockData;
 
@@ -30,7 +33,7 @@ public class MockMessageProducer {
 		for(String data : dataList) {
 			TextMessage message = session.createTextMessage(data);
 			message.setStringProperty("Tipo", "xml");
-			producer.send(message);
+			producer.send(message, DeliveryMode.NON_PERSISTENT, Message.DEFAULT_PRIORITY, Message.DEFAULT_TIME_TO_LIVE);
 		}
 	}
 

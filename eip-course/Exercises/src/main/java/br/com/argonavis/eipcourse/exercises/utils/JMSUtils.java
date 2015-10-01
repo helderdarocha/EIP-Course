@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3;
+package br.com.argonavis.eipcourse.exercises.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

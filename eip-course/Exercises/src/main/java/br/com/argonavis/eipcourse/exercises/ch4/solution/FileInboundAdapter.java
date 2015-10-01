@@ -1,4 +1,4 @@
-package br.com.argonavis.eipcourse.exercises.ch3;
+package br.com.argonavis.eipcourse.exercises.ch4.solution;
 
 import java.io.File;
 import java.io.FilenameFilter;
