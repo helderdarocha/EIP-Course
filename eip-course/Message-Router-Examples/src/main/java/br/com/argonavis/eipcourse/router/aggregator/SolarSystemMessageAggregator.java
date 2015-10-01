@@ -39,10 +39,8 @@ public class SolarSystemMessageAggregator implements MessageListener {
 	public void onMessage(Message message) {
 		try {
 			String sequenceID = message.getJMSCorrelationID();
-			Long size = message.getLongProperty("SequenceSize");
+			int size = message.getIntProperty("SequenceSize");
 			String type = message.getStringProperty("Type");
-			
-			System.out.println(type);
 
 			if(type != null && type.equals("Solar System Fragment")) {
 				System.out.println("Processing fragment.");
@@ -75,16 +73,13 @@ public class SolarSystemMessageAggregator implements MessageListener {
 	}
 	
 	public TextMessage reassemble(Set<TextMessage> messages) throws JMSException {
-		System.out.println("Will reassemble");
 		String[] parts = new String[messages.size()];
 		for(TextMessage message : messages) {
 			String fragment = message.getText();
-			int index = (int)message.getLongProperty("SequencePosition");
+			int index = message.getIntProperty("SequencePosition") - 1;
 			parts[index] = fragment;
 		}
 		String newPayload = "<joined>" + String.join("\n", parts) + "</joined>";
-		
-		System.out.println("-------->" + newPayload);
 		
 		return session.createTextMessage(newPayload);
 	}
