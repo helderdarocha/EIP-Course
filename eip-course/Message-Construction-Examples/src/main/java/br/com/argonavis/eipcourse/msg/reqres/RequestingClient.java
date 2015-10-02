@@ -34,9 +34,9 @@ public class RequestingClient {
 	public void send() throws JMSException {
 		TextMessage requestMessage = session.createTextMessage();
 		requestMessage.setText("<command>"
-				+ "  <method class='br.com.argonavis.eipcourse.msg.reqres.Operation' name='multiply'>"
+				+ "  <method class='br.com.argonavis.eipcourse.msg.reqres.Operation' name='divide'>"
 				+ "    <params>"
-				+ "      <java.lang.Double>3.0</java.lang.Double>"
+				+ "      <java.lang.Double>45.0</java.lang.Double>"
 				+ "      <java.lang.Double>7.0</java.lang.Double>"
 				+ "    </params>"
 				+ "  </method>"
