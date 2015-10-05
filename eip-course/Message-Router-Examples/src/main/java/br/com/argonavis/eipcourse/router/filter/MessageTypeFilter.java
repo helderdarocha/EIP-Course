@@ -64,6 +64,10 @@ public class MessageTypeFilter implements MessageListener {
 		
 		MessageTypeFilter textFilter = new MessageTypeFilter("txt");
 		textFilter.init(con, inTopic, textChannel);
+		
+		MessageTypeFilter xmlFilter = new MessageTypeFilter("xml");
+		xmlFilter.init(con, inTopic, textChannel);
+		
 		System.out.println("Waiting 60 seconds for messages...");
 		
         Thread.sleep(60000); // Will wait one minute for files

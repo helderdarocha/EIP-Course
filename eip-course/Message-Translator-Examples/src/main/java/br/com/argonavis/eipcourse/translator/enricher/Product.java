@@ -2,46 +2,46 @@ package br.com.argonavis.eipcourse.translator.enricher;
 
 import java.io.Serializable;
 
-public class Produto implements Serializable {
+public class Product implements Serializable {
 	private long id;
-    private double preco;
-    private String codigo;
+    private double price;
+    private String code;
     
-    public Produto(long id) {
+    public Product(long id) {
     	this.id = id;
     }
     
-    public Produto(long id, String codigo, double preco) {
+    public Product(long id, String code, double price) {
     	this.id = id;
-    	this.codigo = codigo;
-    	this.preco = preco;
+    	this.code = code;
+    	this.price = price;
     }
     
     public long getId() {
     	return id;
     }
-	public double getPreco() {
-		return preco;
+	public double getPrice() {
+		return price;
 	}
 	public void setPreco(double preco) {
-		this.preco = preco;
+		this.price = preco;
 	}
-	public String getCodigo() {
-		return codigo;
+	public String getCode() {
+		return code;
 	}
 	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+		this.code = codigo;
 	}
     
     public String toString() {
-    	return "("+id+") " + codigo + " $" + preco;
+    	return "("+id+") " + code + " $" + price;
     }
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
+		result = prime * result + ((code == null) ? 0 : code.hashCode());
 		result = prime * result + (int) (id ^ (id >>> 32));
 		return result;
 	}
@@ -54,11 +54,11 @@ public class Produto implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Produto other = (Produto) obj;
-		if (codigo == null) {
-			if (other.codigo != null)
+		Product other = (Product) obj;
+		if (code == null) {
+			if (other.code != null)
 				return false;
-		} else if (!codigo.equals(other.codigo))
+		} else if (!code.equals(other.code))
 			return false;
 		if (id != other.id)
 			return false;

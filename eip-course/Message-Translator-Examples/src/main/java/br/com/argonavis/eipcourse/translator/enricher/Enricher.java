@@ -21,8 +21,8 @@ public class Enricher {
 			
 			new JMSChannelBridge(con, from, to, new PayloadProcessor() {
 				public Object process(Object payload) {
-					long id = ((Produto)payload).getId();
-					Produto p = ProductDatabase.getProduto(id);
+					long id = ((Product)payload).getId();
+					Product p = ProductDatabase.getProduto(id);
 					System.out.println("Produto obtido: " + p);
 					return p;
 				}
