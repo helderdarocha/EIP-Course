@@ -1,8 +1,5 @@
 package br.com.argonavis.eipcourse.router.resequencer;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;

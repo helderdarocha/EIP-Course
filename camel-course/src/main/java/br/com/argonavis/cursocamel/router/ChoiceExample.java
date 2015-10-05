@@ -5,9 +5,8 @@
  */
 package br.com.argonavis.cursocamel.router;
 
-import br.com.argonavis.cursocamel.channel.*;
-import br.com.argonavis.cursocamel.Configuration;
 import javax.jms.ConnectionFactory;
+
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
@@ -15,6 +14,8 @@ import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.impl.DefaultCamelContext;
+
+import br.com.argonavis.cursocamel.Configuration;
 
 /**
  *
@@ -34,7 +35,7 @@ public class ChoiceExample {
                 // Rota 1 – Do sistema de arquivos para a fila inbound-queue
                 from("file:/tmp/jms/inbox")
                     .setHeader("Name", header("CamelFileNameOnly"))
-                    .setHeader("Length", header("CamelFileNameOnly"))
+                    .setHeader("Length", header("CamelFileLength"))
                     .process(new Processor() {
                         public void process(Exchange exchange) throws Exception {
                             String name =  exchange.getIn().getHeader("Name", String.class);

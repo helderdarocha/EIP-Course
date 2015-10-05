@@ -22,7 +22,7 @@ public class PojoMessageProducer {
 	}
 	
 	public void send() throws JMSException {
-		Produto p = new Produto(3);
+		Product p = new Product(3);
 		ObjectMessage message = session.createObjectMessage(p);
 		message.setStringProperty("Tipo", "Produto");
 		System.out.println("Sending " + p);

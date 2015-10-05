@@ -33,7 +33,7 @@ public class FilterExample {
                 // Rota 1 – Do sistema de arquivos para a fila inbound-topic
                 from("file:/tmp/jms/inbox")
                     .setHeader("Name", header("CamelFileNameOnly"))
-                    .setHeader("Length", header("CamelFileNameOnly"))
+                    .setHeader("Length", header("CamelFileLength"))
                     .process(new Processor() {
                         public void process(Exchange exchange) throws Exception {
                             String name = exchange.getIn().getHeader("Name", String.class);
