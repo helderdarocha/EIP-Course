@@ -1,4 +1,6 @@
-package br.com.argonavis.eipcourse.exercises.ch3;
+package br.com.argonavis.eipcourse.mgmt.wiretap;
+
+import java.util.List;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -6,6 +8,7 @@ import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
+import javax.jms.TextMessage;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
@@ -21,7 +24,12 @@ public class MockMessageProducer {
 	}
 	
 	public void send() throws JMSException {
-		// EXERCICIO 2
+		List<String> dataList = MockData.getMockData();
+		for(String data : dataList) {
+			TextMessage message = session.createTextMessage(data);
+			message.setStringProperty("Tipo", "xml");
+			producer.send(message);
+		}
 	}
 
 	public static void main(String[] args) {
