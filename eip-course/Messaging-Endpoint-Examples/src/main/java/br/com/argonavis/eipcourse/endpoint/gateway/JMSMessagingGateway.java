@@ -100,7 +100,7 @@ public class JMSMessagingGateway implements SimpleMessagingGateway {
 	}
 
 	@Override
-	public void register(MessagingEventHandler handler, SimpleChannel c)
+	public void register(final MessagingEventHandler handler, SimpleChannel c)
 			throws MessagingException {
 		Session session = createSession();
 		Destination destination = getDestination(c.getName());

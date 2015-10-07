@@ -27,7 +27,7 @@ public class FileInboundAdapter {
 	private File directory;
 	boolean delete = false;
 	private Set<String> namesRead = new HashSet<>();
-	
+	 
 	private Session session;
 	private MessageProducer producer;
 

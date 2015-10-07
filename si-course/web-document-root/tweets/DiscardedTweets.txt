@@ -20,3 +20,5 @@ Pugazzz: #TheDevConf esse eh o melhor evento de desenvolvimento aqui no Brasil..
 arendhil: Aprendendo novas tecnologias com a Intel no #TDC2015 #RealSenseSP
 Magnator: "Qualquer coisa muito tecnologica eh indistinguivel da magica" #QuotesOfTheDay #ArthurCClark #IntelRealSenseSP #TheDevConf #TDC2015
 Magnator: Equipe reunida. Hora de produzir para o #TDC2015 #IntelRealSenseSP
+ProfissaoJava: RT @yarasenger: Se voce participou do #TheDevConf atualize seu perfil! Acompanhe a nossa página e maximize ainda mais a sua particip…https:…
+globalcode: Palestra muito bacana sobre Java EE 7 pra você assistir quando quiser e onde estiver! Com @brunoborges da #Oracle no #TheDevConf

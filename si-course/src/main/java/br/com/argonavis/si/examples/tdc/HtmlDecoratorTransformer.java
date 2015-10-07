@@ -6,6 +6,7 @@ import org.springframework.messaging.Message;
 
 public class HtmlDecoratorTransformer implements Transformer {
 
+	@Override
 	public Message<?> transform(Message<?> message) {
 		String[] words = message.getPayload().toString().split(" ");
 		StringBuilder buffer = new StringBuilder();

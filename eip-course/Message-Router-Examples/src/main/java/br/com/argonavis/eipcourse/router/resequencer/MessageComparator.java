@@ -16,4 +16,5 @@ public class MessageComparator implements Comparator<Message> {
 			return 0;
 		}
 	}
+
 }

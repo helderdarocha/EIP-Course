@@ -26,9 +26,9 @@ public class DurableSubscriberExample {
 		Connection con = factory.createConnection();
 		String clientID = "Sub1";
 		con.setClientID(clientID);
-		Session session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
+		final Session session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-		MessageProducer producer = session.createProducer(topic);
+		final MessageProducer producer = session.createProducer(topic);
 		ExecutorService executorService = Executors.newSingleThreadExecutor();
 		executorService.execute(new Runnable() {
 			int mcount = 0;
@@ -48,7 +48,7 @@ public class DurableSubscriberExample {
 			}
 		});
 
-		MessageConsumer consumer1 = session.createDurableSubscriber(topic,
+		final MessageConsumer consumer1 = session.createDurableSubscriber(topic,
 				clientID);
 		consumer1.setMessageListener(new MessageListener() {
 			int messageCount = 0;

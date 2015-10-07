@@ -24,14 +24,14 @@ public class WireTappedBridge {
 			Destination fromChannel = (Destination) ctx.lookup("in-channel");
 			Destination toChannel   = (Destination) ctx.lookup("out-channel");
 			Destination wireTap     = (Destination) ctx.lookup("wiretap");
-			
+			/*
 			FileInboundAdapter adapter = new FileInboundAdapter(con, fromChannel, new File(FileInboundAdapter.INBOX), false);
 			List<File> files = adapter.loadFiles();
 			if (!files.isEmpty()) {
 				List<Message> messages = adapter.createMessages(files);
 				adapter.send(messages);
 			}
-			
+			*/
 			new WireTap(con, fromChannel, toChannel, wireTap);
 
 			new FileOutboundAdapter(con, toChannel, new File(FileOutboundAdapter.OUTBOX));

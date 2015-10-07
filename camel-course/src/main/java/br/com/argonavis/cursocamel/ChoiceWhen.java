@@ -6,8 +6,8 @@
 
 package br.com.argonavis.cursocamel;
 
-import br.com.argonavis.cursocamel.routes.FileToJmsRoute;
 import javax.jms.ConnectionFactory;
+
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
