@@ -3,4 +3,7 @@
 <fullyQualifiedTypeName name="org.apache.activemq.ActiveMQConnectionFactory"/>
 <fullyQualifiedTypeName name="javax.jms.ConnectionFactory"/>
 <fullyQualifiedTypeName name="org.apache.camel.Processor"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

@@ -334,3 +334,558 @@
 2015-10-07 22:51:31,968 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2015-10-07 22:51:31,969 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2015-10-07 22:51:31,969 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2015-11-17 19:19:59,705 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-11-17 19:19:59,715 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-11-17 19:19:59,727 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-11-17 19:19:59,727 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2015-11-17 19:20:00,368 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-17 19:20:00,402 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-11-17 19:20:00,406 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-11-17 19:20:00,406 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:27:49,271 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-08 23:27:50,375 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:27:50,381 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:27:50,398 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:27:50,398 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:27:51,012 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-08 23:27:51,038 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:hello-spring-integration:0.0.1-SNAPSHOT @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/si-course/pom.xml.
+2017-06-08 23:27:51,472 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 23:27:51,487 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:27:51,500 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 23:27:51,503 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:27:52,830 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-08 23:27:53,119 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: br.com.argonavis:eip-course:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/eip-course/pom.xml.
+2017-06-08 23:27:53,151 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:hello-spring-integration:0.0.1-SNAPSHOT @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/si-course/pom.xml.
+2017-06-08 23:27:53,869 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:27:53,871 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:27:53,874 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:27:53,874 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:27:53,939 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 23:27:53,975 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:27:53,976 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 23:27:53,977 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:28:17,751 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 23:28:17,752 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:28:17,754 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-08 23:28:17,755 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:30:09,315 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:30:09,330 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:30:09,337 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:30:09,338 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:31:55,326 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-08 23:31:57,466 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-mqtt/2.15.0/camel-mqtt-2.15.0.pom
+2017-06-08 23:31:57,658 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-mqtt/2.15.0/camel-mqtt-2.15.0.pom
+2017-06-08 23:31:57,818 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.10/mqtt-client-1.10.pom
+2017-06-08 23:31:57,991 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.10/mqtt-client-1.10.pom
+2017-06-08 23:31:58,141 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.10/mqtt-client-project-1.10.pom
+2017-06-08 23:31:58,330 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/mqtt-client/mqtt-client-project/1.10/mqtt-client-project-1.10.pom
+2017-06-08 23:31:58,477 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/fusesource-pom/1.10/fusesource-pom-1.10.pom
+2017-06-08 23:31:58,661 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/fusesource-pom/1.10/fusesource-pom-1.10.pom
+2017-06-08 23:31:58,821 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.20/hawtdispatch-transport-1.20.pom
+2017-06-08 23:31:58,974 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.20/hawtdispatch-transport-1.20.pom
+2017-06-08 23:31:59,134 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.20/hawtdispatch-project-1.20.pom
+2017-06-08 23:31:59,295 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-project/1.20/hawtdispatch-project-1.20.pom
+2017-06-08 23:31:59,447 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.20/hawtdispatch-1.20.pom
+2017-06-08 23:31:59,598 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.20/hawtdispatch-1.20.pom
+2017-06-08 23:31:59,753 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.10/hawtbuf-1.10.pom
+2017-06-08 23:31:59,908 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.10/hawtbuf-1.10.pom
+2017-06-08 23:32:00,055 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.10/hawtbuf-project-1.10.pom
+2017-06-08 23:32:00,215 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtbuf/hawtbuf-project/1.10/hawtbuf-project-1.10.pom
+2017-06-08 23:32:00,494 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-mqtt/2.15.0/camel-mqtt-2.15.0.jar
+2017-06-08 23:32:00,869 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-mqtt/2.15.0/camel-mqtt-2.15.0.jar
+2017-06-08 23:32:01,019 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.10/mqtt-client-1.10.jar
+2017-06-08 23:32:01,413 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/mqtt-client/mqtt-client/1.10/mqtt-client-1.10.jar
+2017-06-08 23:32:01,586 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.20/hawtdispatch-transport-1.20.jar
+2017-06-08 23:32:01,998 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch-transport/1.20/hawtdispatch-transport-1.20.jar
+2017-06-08 23:32:02,192 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.20/hawtdispatch-1.20.jar
+2017-06-08 23:32:02,532 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtdispatch/hawtdispatch/1.20/hawtdispatch-1.20.jar
+2017-06-08 23:32:02,723 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.10/hawtbuf-1.10.jar
+2017-06-08 23:32:02,921 [Worker-24] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtbuf/hawtbuf/1.10/hawtbuf-1.10.jar
+2017-06-08 23:32:03,074 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:32:03,075 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-08 23:32:03,076 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:32:03,076 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:32:04,879 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:32:04,880 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:32:04,886 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:32:04,886 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:42:25,993 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:42:25,995 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:42:25,996 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:42:25,996 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:44:03,006 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:44:03,007 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:44:03,011 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:44:03,011 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:45:16,770 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:45:16,771 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:45:16,774 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:45:16,774 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:47:47,070 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:47:47,071 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:47:47,073 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:47:47,073 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-08 23:48:27,367 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:48:27,368 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-08 23:48:27,371 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-08 23:48:27,371 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-09 01:27:41,415 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 01:27:41,420 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 01:27:41,422 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 01:27:41,422 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-09 14:44:53,335 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis.javaee7:iot-ws-rest:1.0.0 @ /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/pom.xml.
+2017-06-09 14:44:54,086 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iot-ws-rest/src/main/java
+2017-06-09 14:44:54,086 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /iot-ws-rest/src/main/resources
+2017-06-09 14:44:54,090 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /iot-ws-rest/src/test/java
+2017-06-09 14:44:57,096 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 4 sec
+2017-06-09 14:45:06,384 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 14:45:06,385 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 14:45:06,387 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 14:45:06,387 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 14:51:53,335 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 14:51:53,336 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 14:51:53,338 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 14:51:53,338 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 14:52:55,894 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 14:52:55,898 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 14:52:55,900 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 14:52:55,900 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:05:32,907 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:05:32,908 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 15:05:32,910 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:05:32,910 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:10:28,438 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:10:28,438 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 15:10:28,439 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:10:28,439 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:10:47,704 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:10:47,705 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 15:10:47,708 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:10:47,709 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:10:48,731 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:10:48,731 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 15:10:48,732 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:10:48,732 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:14:45,135 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:14:45,137 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 15:14:45,141 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:14:45,141 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:15:19,803 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:15:19,804 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 15:15:19,806 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:15:19,806 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:16:07,219 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:16:07,219 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-09 15:16:07,220 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:16:07,221 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:36:51,250 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest
+2017-06-09 15:36:51,253 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-06-09 15:36:53,542 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:36:53,542 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 15:36:53,544 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:36:53,544 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:36:53,545 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of iot-ws-rest
+2017-06-09 15:36:53,548 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for iot-ws-rest
+2017-06-09 15:36:53,569 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:37:00,500 [Worker-43] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest
+2017-06-09 15:37:00,500 [Worker-43] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2017-06-09 15:37:06,355 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:37:06,356 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 15:37:06,359 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:37:06,359 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-09 15:37:51,313 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:37:51,314 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-09 15:37:51,316 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-09 15:37:51,316 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:41:45,893 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:45,902 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 01:41:45,913 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:45,913 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:41:50,131 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis.javaee7:iot-ws-rest:1.0.0 @ /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/pom.xml.
+2017-06-10 01:41:51,396 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:51,404 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 01:41:51,412 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:51,412 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:41:51,414 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of iot-ws-rest
+2017-06-10 01:41:51,415 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for iot-ws-rest
+2017-06-10 01:41:51,433 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:51,886 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:51,887 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 01:41:51,894 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:51,894 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:41:52,029 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:52,032 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 01:41:52,034 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:52,034 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:41:55,030 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:55,031 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 01:41:55,033 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:41:55,033 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:42:06,783 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:42:06,785 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 01:42:06,786 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:42:06,786 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 01:42:21,065 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:42:21,066 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 01:42:21,067 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 01:42:21,067 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 10:44:27,092 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:44:27,095 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 10:44:27,097 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:44:27,097 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 10:46:04,951 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:46:04,952 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 10:46:04,953 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:46:04,954 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 10:47:42,262 [Worker-92] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-10 10:47:43,416 [Worker-92] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-http/2.15.0/camel-http-2.15.0.jar
+2017-06-10 10:47:44,048 [Worker-92] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-http/2.15.0/camel-http-2.15.0.jar
+2017-06-10 10:47:44,216 [Worker-92] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+2017-06-10 10:47:44,680 [Worker-92] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+2017-06-10 10:47:44,865 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:47:44,865 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 10:47:44,866 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:47:44,866 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 10:47:46,108 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:47:46,111 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 10:47:46,113 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:47:46,113 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 10:51:27,565 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:51:27,566 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 10:51:27,567 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 10:51:27,567 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 11:35:38,010 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:35:38,013 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:35:38,015 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:35:38,015 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 11:49:21,513 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:49:21,516 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:49:21,518 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:49:21,518 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 11:53:07,007 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:53:07,008 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:53:07,009 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:53:07,009 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 11:57:14,069 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:14,070 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:57:14,072 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:14,072 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 11:57:26,506 [Worker-99] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis.javaee7:iot-ws-rest:1.0.0 @ /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/pom.xml.
+2017-06-10 11:57:27,657 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:27,658 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:57:27,661 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:27,661 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 11:57:27,888 [Worker-99] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of iot-ws-rest
+2017-06-10 11:57:27,888 [Worker-99] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for iot-ws-rest
+2017-06-10 11:57:27,894 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:28,146 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:28,147 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:57:28,149 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:57:28,149 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 11:58:49,142 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:58:49,143 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 11:58:49,144 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 11:58:49,144 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:04:29,558 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:04:29,559 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:04:29,560 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:04:29,560 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:08:04,732 [Worker-101] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-10 12:08:05,897 [Worker-101] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-http4/2.15.0/camel-http4-2.15.0.pom
+2017-06-10 12:08:06,074 [Worker-101] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-http4/2.15.0/camel-http4-2.15.0.pom
+2017-06-10 12:08:06,429 [Worker-101] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-http4/2.15.0/camel-http4-2.15.0.jar
+2017-06-10 12:08:06,968 [Worker-101] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-http4/2.15.0/camel-http4-2.15.0.jar
+2017-06-10 12:08:07,123 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:08:07,123 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 12:08:07,124 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:08:07,124 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:08:07,918 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:08:07,919 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:08:07,921 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:08:07,921 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:10:53,956 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:10:53,957 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:10:53,958 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:10:53,958 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:14:54,976 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:14:54,977 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:14:54,978 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:14:54,978 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:33:40,256 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:33:40,259 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:33:40,261 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:33:40,261 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:36:34,952 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:36:34,952 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:36:34,953 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:36:34,953 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:38:05,361 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:38:05,362 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:38:05,363 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:38:05,363 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:42:03,981 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:42:03,982 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:42:03,983 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:42:03,983 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:43:24,367 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:43:24,368 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:43:24,369 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:43:24,369 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:44:38,324 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:44:38,324 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:44:38,325 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:44:38,325 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:46:08,019 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:46:08,020 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:46:08,021 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:46:08,021 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:47:19,348 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:47:19,349 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:47:19,350 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:47:19,350 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:48:12,230 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:48:12,231 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:48:12,233 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:48:12,233 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:48:57,381 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:48:57,381 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:48:57,382 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:48:57,382 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:51:56,967 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:51:56,968 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:51:56,969 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:51:56,969 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 12:56:40,046 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:56:40,047 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 12:56:40,047 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 12:56:40,047 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:00:31,457 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:00:31,458 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:00:31,459 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:00:31,459 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:01:37,641 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:01:37,641 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:01:37,643 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:01:37,643 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:03:23,721 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:03:23,722 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:03:23,723 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:03:23,723 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:04:02,196 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:04:02,196 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:04:02,197 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:04:02,197 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:04:10,514 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:04:10,514 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:04:10,515 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:04:10,515 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:04:37,831 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:04:37,831 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:04:37,832 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:04:37,832 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:05:16,176 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:05:16,176 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:05:16,177 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:05:16,177 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:05:37,184 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:05:37,184 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:05:37,185 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:05:37,185 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:06:13,706 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:06:13,707 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:06:13,708 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:06:13,708 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:09:58,177 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:09:58,178 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:09:58,179 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:09:58,179 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:11:00,875 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:11:00,876 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:11:00,877 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:11:00,877 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:14:09,768 [Worker-98] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-10 13:14:10,032 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:14:10,032 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 13:14:10,033 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:14:10,033 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:14:11,589 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:14:11,589 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:14:11,592 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:14:11,592 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:14:29,672 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:14:29,673 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:14:29,674 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:14:29,674 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:15:31,100 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:15:31,101 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:15:31,102 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:15:31,102 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:17:08,728 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:17:08,729 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:17:08,730 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:17:08,730 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:19:52,590 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:19:52,592 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:19:52,593 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:19:52,593 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:20:38,555 [Worker-95] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-10 13:20:39,553 [Worker-95] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-stream/2.15.0/camel-stream-2.15.0.pom
+2017-06-10 13:20:39,705 [Worker-95] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-stream/2.15.0/camel-stream-2.15.0.pom
+2017-06-10 13:20:39,979 [Worker-95] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-stream/2.15.0/camel-stream-2.15.0.jar
+2017-06-10 13:20:40,327 [Worker-95] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-stream/2.15.0/camel-stream-2.15.0.jar
+2017-06-10 13:20:40,389 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:20:40,389 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 13:20:40,390 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:20:40,390 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:20:41,945 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:20:41,946 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:20:41,948 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:20:41,948 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:21:09,043 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:21:09,043 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:21:09,044 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:21:09,044 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:24:44,692 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:24:44,693 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:24:44,694 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:24:44,694 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:25:22,797 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:25:22,798 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:25:22,798 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:25:22,798 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:25:55,608 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:25:55,609 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:25:55,610 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:25:55,610 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:26:54,137 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:26:54,138 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:26:54,139 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:26:54,139 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:27:20,481 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:27:20,482 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:27:20,483 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:27:20,483 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:31:39,323 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:31:39,340 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:31:39,350 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:31:39,350 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 13:31:55,701 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:31:55,702 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:31:55,703 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:31:55,703 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:32:45,602 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:32:45,620 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:32:45,622 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:32:45,622 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:35:22,319 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:35:22,320 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:35:22,322 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:35:22,322 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:35:37,446 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:35:37,446 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:35:37,448 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:35:37,448 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:41:35,997 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:41:35,999 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:41:36,000 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:41:36,000 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:42:25,186 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:42:25,187 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:42:25,188 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:42:25,188 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:43:24,168 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:43:24,169 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:43:24,173 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:43:24,174 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:48:03,336 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:48:03,337 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:48:03,339 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:48:03,339 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:50:39,600 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-10 13:50:40,839 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-restlet/2.15.0/camel-restlet-2.15.0.pom
+2017-06-10 13:50:40,993 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-restlet/2.15.0/camel-restlet-2.15.0.pom
+2017-06-10 13:50:41,147 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/restlet/osgi/org.restlet/2.2.3/org.restlet-2.2.3.pom
+2017-06-10 13:50:42,690 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.restlet.org/org/restlet/osgi/org.restlet/2.2.3/org.restlet-2.2.3.pom
+2017-06-10 13:50:43,190 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.restlet.org/org/restlet/osgi/org.restlet/2.2.3/org.restlet-2.2.3.pom
+2017-06-10 13:50:43,839 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/restlet/osgi/org.restlet.parent/2.2.3/org.restlet.parent-2.2.3.pom
+2017-06-10 13:50:44,453 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.restlet.org/org/restlet/osgi/org.restlet.parent/2.2.3/org.restlet.parent-2.2.3.pom
+2017-06-10 13:50:45,053 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.restlet.org/org/restlet/osgi/org.restlet.parent/2.2.3/org.restlet.parent-2.2.3.pom
+2017-06-10 13:50:45,683 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/4.0.0/org.osgi.core-4.0.0.pom
+2017-06-10 13:50:45,838 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/4.0.0/org.osgi.core-4.0.0.pom
+2017-06-10 13:50:45,989 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.0.0/org.osgi.compendium-4.0.0.pom
+2017-06-10 13:50:46,135 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.0.0/org.osgi.compendium-4.0.0.pom
+2017-06-10 13:50:46,277 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/restlet/osgi/org.restlet.ext.httpclient/2.2.3/org.restlet.ext.httpclient-2.2.3.pom
+2017-06-10 13:50:46,875 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.restlet.org/org/restlet/osgi/org.restlet.ext.httpclient/2.2.3/org.restlet.ext.httpclient-2.2.3.pom
+2017-06-10 13:50:47,492 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.restlet.org/org/restlet/osgi/org.restlet.ext.httpclient/2.2.3/org.restlet.ext.httpclient-2.2.3.pom
+2017-06-10 13:50:48,139 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom
+2017-06-10 13:50:48,295 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom
+2017-06-10 13:50:48,454 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom
+2017-06-10 13:50:48,778 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/20/commons-parent-20.pom
+2017-06-10 13:50:48,936 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.pom
+2017-06-10 13:50:49,098 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.pom
+2017-06-10 13:50:49,267 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3.2/httpcomponents-client-4.3.2.pom
+2017-06-10 13:50:49,443 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3.2/httpcomponents-client-4.3.2.pom
+2017-06-10 13:50:49,601 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.pom
+2017-06-10 13:50:49,759 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.pom
+2017-06-10 13:50:49,933 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3.1/httpcomponents-core-4.3.1.pom
+2017-06-10 13:50:50,097 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3.1/httpcomponents-core-4.3.1.pom
+2017-06-10 13:50:50,256 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.pom
+2017-06-10 13:50:50,413 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.pom
+2017-06-10 13:50:50,559 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3/httpcomponents-client-4.3.pom
+2017-06-10 13:50:50,737 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3/httpcomponents-client-4.3.pom
+2017-06-10 13:50:50,893 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.pom
+2017-06-10 13:50:51,128 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.pom
+2017-06-10 13:50:51,285 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.pom
+2017-06-10 13:50:51,435 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.pom
+2017-06-10 13:50:51,594 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3/httpcomponents-core-4.3.pom
+2017-06-10 13:50:51,761 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.3/httpcomponents-core-4.3.pom
+2017-06-10 13:50:52,106 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-restlet/2.15.0/camel-restlet-2.15.0.jar
+2017-06-10 13:50:52,338 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-restlet/2.15.0/camel-restlet-2.15.0.jar
+2017-06-10 13:50:52,504 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/restlet/osgi/org.restlet/2.2.3/org.restlet-2.2.3.jar
+2017-06-10 13:50:53,118 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/4.0.0/org.osgi.core-4.0.0.jar
+2017-06-10 13:50:54,068 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.core/4.0.0/org.osgi.core-4.0.0.jar
+2017-06-10 13:50:54,221 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.0.0/org.osgi.compendium-4.0.0.jar
+2017-06-10 13:50:54,836 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/osgi/org.osgi.compendium/4.0.0/org.osgi.compendium-4.0.0.jar
+2017-06-10 13:50:55,004 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/restlet/osgi/org.restlet.ext.httpclient/2.2.3/org.restlet.ext.httpclient-2.2.3.jar
+2017-06-10 13:50:55,640 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.jar
+2017-06-10 13:50:56,494 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.jar
+2017-06-10 13:50:56,650 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.jar
+2017-06-10 13:50:56,836 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.3/httpmime-4.3.jar
+2017-06-10 13:50:57,430 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.restlet.org/org/restlet/osgi/org.restlet/2.2.3/org.restlet-2.2.3.jar
+2017-06-10 13:50:59,266 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.restlet.org/org/restlet/osgi/org.restlet/2.2.3/org.restlet-2.2.3.jar
+2017-06-10 13:50:59,789 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.restlet.org/org/restlet/osgi/org.restlet.ext.httpclient/2.2.3/org.restlet.ext.httpclient-2.2.3.jar
+2017-06-10 13:51:00,296 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.restlet.org/org/restlet/osgi/org.restlet.ext.httpclient/2.2.3/org.restlet.ext.httpclient-2.2.3.jar
+2017-06-10 13:51:00,441 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:51:00,441 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 13:51:00,442 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:51:00,442 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:51:01,460 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:51:01,461 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:51:01,468 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:51:01,468 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:52:10,185 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:52:10,187 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:52:10,188 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:52:10,188 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:58:52,934 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:58:52,935 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:58:52,937 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:58:52,937 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 13:59:31,527 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:59:31,528 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 13:59:31,528 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 13:59:31,529 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 14:00:50,448 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 14:00:50,449 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 14:00:50,451 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 14:00:50,452 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 14:02:48,986 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis:cursocamel:1.0.0 @ /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/pom.xml.
+2017-06-10 14:02:49,352 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 14:02:49,353 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-10 14:02:49,357 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 14:02:49,357 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/JavaWorkspace/EIP-Course/camel-course/src/test/resources
+2017-06-10 16:45:19,704 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 16:45:19,723 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-06-10 16:45:19,731 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-06-10 16:45:19,732 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/src/test/resources
+2017-06-10 18:06:45,617 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.argonavis.javaee7:iot-ws-rest:1.0.0 @ /Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-12-WS-REST/solucao/iot-ws-rest/pom.xml.

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+       xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+       xmlns:int-file="http://www.springframework.org/schema/integration/file"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/integration/stream 
+	http://www.springframework.org/schema/integration/stream/spring-integration-stream.xsd
+	
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+	
+    http://www.springframework.org/schema/integration/jms 
+    http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd
+	
+    http://www.springframework.org/schema/integration 
+    http://www.springframework.org/schema/integration/spring-integration.xsd
+    
+    http://www.springframework.org/schema/integration/file 
+    http://www.springframework.org/schema/integration/file/spring-integration-file.xsd">
+    
+    <bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <constructor-arg index="0" value="tcp://localhost:61616"/>
+    </bean>
+
+    <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <constructor-arg ref="amqConnectionFactory" />
+    </bean>
+    
+    <int:channel id="spring-contagem" />
+    
+	<int-file:inbound-channel-adapter id="file-queue"
+	    directory="file:///tmp/jms/inbox"
+	    filename-pattern="*.txt">
+	    <int:poller default="true" fixed-delay="100"/>
+	</int-file:inbound-channel-adapter>
+	
+	<int-file:file-to-string-transformer 
+	    input-channel="file-queue"
+	    output-channel="spring-contagem"/>
+	
+	<int-jms:message-driven-channel-adapter 
+	    destination-name="contagem"
+	    channel="spring-contagem" />
+	    
+	<int-stream:stdout-channel-adapter channel="spring-contagem" />
+	
+</beans>

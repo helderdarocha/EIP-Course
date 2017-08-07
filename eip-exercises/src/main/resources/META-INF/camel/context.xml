@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:camel="http://camel.apache.org/schema/spring" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<constructor-arg index="0" value="tcp://localhost:61616" />
+	</bean>
+
+	<bean id="connectionFactory"
+		class="org.springframework.jms.connection.CachingConnectionFactory">
+		<constructor-arg ref="amqConnectionFactory" />
+	</bean>
+	
+	<bean id="transformerBean" class="eipcourse.exercises.camel.basic.route.CamelTransformer" />
+
+	<camelContext xmlns="http://camel.apache.org/schema/spring">
+		<route>
+			<from uri="jms:queue:entrada" />
+			<choice>
+				<when>
+					<simple>${header["content-type"]} == "text/plain"</simple>
+					<to uri="jms:queue:saida" />
+					<transform>
+						<simple>Enviada para saida: ${body}.</simple>
+					</transform>
+					<to uri="stream:out" />
+				</when>
+				<when>
+					<simple>${header["content-type"]} == "text/xml"</simple>
+					<to uri="jms:queue:msgxml" />
+					<transform>
+						<simple>Enviada para processamento: ${body}.</simple>
+					</transform>
+					<to uri="stream:out" />
+				</when>
+				<otherwise>
+					<to uri="jms:queue:invalida" />
+					<transform>
+						<simple>Enviada para fila de mensages inválidas: ${body}.</simple>
+					</transform>
+				</otherwise>
+			</choice>
+		</route>
+
+		<route>
+			<from uri="jms:queue:msgxml" />
+			<process ref="transformerBean" />
+			<to uri="jms:queue:saida" />
+		</route>
+
+		<route>
+			<from uri="jms:queue:saida" />
+			<transform>
+				<simple>Type: ${header['content-type']} \nContents: ${body}</simple>
+			</transform>
+			<to uri="stream:out" />
+		</route>
+	</camelContext>
+
+</beans>

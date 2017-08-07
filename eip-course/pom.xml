@@ -1,40 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.argonavis</groupId>
 	<artifactId>eip-course</artifactId>
-	<version>1.0.0</version>
+	<version>2.0.0</version>
 	<packaging>pom</packaging>
-	<name>EIP Course</name>
-	<description>EIP Course examples and exercises</description>
+	<name>eip-course</name>
+	<description>EIP Course Second Edition (2017)</description>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<configuration>
-						<source>${maven.compiler.source}</source>
-						<target>${maven.compiler.target}</target>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 	<modules>
-		<module>Messaging-Examples</module>
-		<module>Message-Channel-Examples</module>
-		<module>Message-Construction-Examples</module>
-		<module>Message-Router-Examples</module>
-		<module>Message-Translator-Examples</module>
-		<module>Messaging-Endpoint-Examples</module>
-		<module>Messaging-Management-Examples</module>
-		<module>EIP-Case-Study</module>
-		<module>Exercises</module>
+		<module>../eip-channels</module>
+		<module>../eip-messages</module>
+		<module>../eip-routers</module>
+		<module>../eip-transformers</module>
+		
+		<module>../eip-endpoints</module>
+		<module>../eip-management</module>
+		
+		<module>../eip-messaging</module>
+		<module>../eip-examples</module>
 	</modules>
 </project>

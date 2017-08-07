@@ -2,7 +2,7 @@
   "version": "v1",
   "title": "Eclipse.org Error Reporting Server",
   "description": "Automated Error Reporting for eclipse.org",
-  "timestamp": 1444236944632,
+  "timestamp": 1447795196132,
   "ttl": 20160,
   "helpUrl": "https://wiki.eclipse.org/EPP/Logging",
   "feedbackUrl": "https://docs.google.com/a/codetrails.com/forms/d/1wd9AzydLv_TMa7ZBXHO7zQIhZjZCJRNMed-6J4fVNsc/viewform",
@@ -49,7 +49,9 @@
     "org.eclipse.core.filesystem::Could not move*",
     "org.eclipse.core.filesystem::Could not delete*",
     "org.eclipse.pde.core::The current target platform contains errors*",
-    ":org.eclipse.equinox.security.storage.StorageException:"
+    ":org.eclipse.equinox.security.storage.StorageException:",
+    ":org.eclipse.ecf.filetransfer.*:",
+    ":java.net.*:"
   ],
-  "problemsZipLastDownloadTimestamp": 1444236959770
+  "problemsZipLastDownloadTimestamp": 1447795212185
 }

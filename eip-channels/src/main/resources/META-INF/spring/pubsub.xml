@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+	xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+	xsi:schemaLocation="http://www.springframework.org/schema/integration/stream http://www.springframework.org/schema/integration/stream/spring-integration-stream-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms-4.3.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration-4.3.xsd">
+		
+	<bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <constructor-arg index="0" value="tcp://localhost:61616"/>
+    </bean>
+
+    <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <constructor-arg ref="amqConnectionFactory" />
+    </bean>
+    
+    <bean id="worker1" class="br.com.argonavis.eipcourse.channel.pubsub.spring.Worker">
+        <constructor-arg value="Worker-1"/>
+    </bean>
+    
+    <bean id="worker2" class="br.com.argonavis.eipcourse.channel.pubsub.spring.Worker">
+        <constructor-arg value="Worker-2"/>
+    </bean>
+
+	<int-jms:publish-subscribe-channel id="notifications" topic-name="test-topic" />
+	
+	<int:service-activator ref="worker1" input-channel="notifications" />
+	<int:service-activator ref="worker2" input-channel="notifications" />
+	
+	<int-stream:stdout-channel-adapter channel="notifications" append-newline="true" />
+	
+</beans>

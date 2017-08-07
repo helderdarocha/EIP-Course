@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring 
+       http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<constructor-arg index="0" value="tcp://localhost:61616" />
+	</bean>
+
+	<bean id="connectionFactory"
+		class="org.springframework.jms.connection.CachingConnectionFactory">
+		<constructor-arg ref="amqConnectionFactory" />
+	</bean>
+
+	<camelContext xmlns="http://camel.apache.org/schema/spring">
+
+		<route>
+			<from uri="jms:queue:mixed-queue" />
+            
+			<choice>
+				<when>
+					<simple>${header.nature} == "evil"</simple>
+					<to uri="jms:queue:evil-queue" />
+				</when>
+				<when>
+					<simple>${header.nature} == "good"</simple>
+					<to uri="jms:queue:good-queue" />
+				</when>
+				<otherwise>
+					<to uri="jms:queue:invalid-queue" />
+				</otherwise>
+			</choice>
+		</route>
+
+		<route>
+			<from uri="jms:queue:evil-queue" />
+			<transform>
+			    <simple>Mensagem do mal: ${body}</simple>
+			</transform>
+            <to uri="stream:out" />
+		</route>
+		<route>
+		    <from uri="jms:queue:good-queue" /> 
+		    <transform>
+			    <simple>Mensagem do bem: ${body}</simple>
+			</transform>
+            <to uri="stream:out" />
+		</route>
+
+	</camelContext>
+
+</beans>

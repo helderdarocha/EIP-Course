@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+       xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/integration/stream 
+	http://www.springframework.org/schema/integration/stream/spring-integration-stream.xsd
+	
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+	
+    http://www.springframework.org/schema/integration/jms 
+    http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd
+	
+    http://www.springframework.org/schema/integration 
+    http://www.springframework.org/schema/integration/spring-integration.xsd">
+    
+    <bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <constructor-arg index="0" value="tcp://localhost:61616"/>
+    </bean>
+
+    <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+        <constructor-arg ref="amqConnectionFactory" />
+    </bean>
+    
+    <int:poller default="true" fixed-delay="50"/>
+
+    <int:channel id="good-queue"><int:queue/></int:channel>
+	<int:channel id="evil-queue"><int:queue/></int:channel>
+	<int:channel id="mixed-queue"><int:queue/></int:channel>
+	
+	<int-jms:inbound-channel-adapter destination-name="mixed-queue" channel="mixed-queue">
+         <int:poller fixed-rate="1000" />
+    </int-jms:inbound-channel-adapter>
+    <int-jms:outbound-channel-adapter destination-name="good-queue" channel="good-queue">
+         <int:poller fixed-rate="1000" />
+    </int-jms:outbound-channel-adapter>
+    <int-jms:outbound-channel-adapter destination-name="evil-queue" channel="evil-queue">
+         <int:poller fixed-rate="1000" />
+    </int-jms:outbound-channel-adapter>
+
+	<int:header-value-router input-channel="mixed-queue" header-name="nature">
+		<int:mapping value="good" channel="good-queue" />
+		<int:mapping value="evil" channel="evil-queue" />
+	</int:header-value-router>
+
+	<int-stream:stdout-channel-adapter channel="evil-queue" append-newline="true" />
+	
+	<!-- 
+	<int-stream:stdout-channel-adapter channel="good-queue" append-newline="true" />
+	 -->
+</beans>

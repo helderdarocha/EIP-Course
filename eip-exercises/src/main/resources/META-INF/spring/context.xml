@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:int="http://www.springframework.org/schema/integration"
+    xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+    xmlns:int-xml="http://www.springframework.org/schema/integration/xml"
+    xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	    http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd
+	    http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd
+	    http://www.springframework.org/schema/integration/xml http://www.springframework.org/schema/integration/xml/spring-integration-xml.xsd
+	    http://www.springframework.org/schema/integration/stream http://www.springframework.org/schema/integration/stream/spring-integration-stream.xsd">
+
+	<bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<constructor-arg index="0" value="tcp://localhost:61616" />
+	</bean>
+
+	<bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
+		<constructor-arg ref="amqConnectionFactory" />
+	</bean>
+	
+	<!--  Filas JMS que usam connectionFactory -->
+    <int-jms:channel queue-name="entrada"  id="entrada"  message-driven="true"/>
+    <int-jms:channel queue-name="saida"    id="saida"    message-driven="true"/>
+    <int-jms:channel queue-name="invalida" id="invalida" message-driven="true"/>
+    
+    <!--  Fila Spring Integration -->
+    <int:channel id="processamento"/>
+    
+    <int:header-value-router input-channel="entrada" header-name="content-type" default-output-channel="invalida">
+       	<int:mapping value="text/plain" channel="saida" />
+      	<int:mapping value="text/xml" channel="processamento" />
+    </int:header-value-router>
+    
+    <int-xml:xpath-transformer input-channel="processamento" output-channel="saida" xpath-expression="/sorte" />
+    <int-stream:stdout-channel-adapter channel="saida" append-newline="true" />
+      
+</beans>
