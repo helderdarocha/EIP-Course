@@ -17,7 +17,7 @@ public class CommandMessageListener implements MessageListener {
 			String methodName = message.getStringProperty("Method-name");
 
 			Method method = PrintingService.class.getMethod(methodName, String.class, Integer.class);
-			method.invoke(data, copies);
+			method.invoke(PrintingService.class.newInstance(), data, copies);
 			
 		} catch (Exception e) {
 			e.printStackTrace();

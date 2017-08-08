@@ -21,16 +21,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author helderdarocha
  */
 public class RouterSpringExample {
-	
-	public static String ACTIVEMQ_URL = "tcp://localhost:61616";
 
     public static void main(String[] args) throws Exception {
-       	ClassPathXmlApplicationContext context = 
-    			  new ClassPathXmlApplicationContext("/META-INF/camel/router-example.xml");
-        context.start();
-
-        System.out.println("O servidor está no ar por 60 segundos.");
-        Thread.sleep(60000);
-        context.stop();
+       	new ClassPathXmlApplicationContext("/META-INF/camel/router-example.xml");
     }
 }
