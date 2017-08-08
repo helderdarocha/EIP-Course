@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:int-file="http://www.springframework.org/schema/integration/file"
+	xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+	xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+	xmlns:int-xml="http://www.springframework.org/schema/integration/xml"
+	xsi:schemaLocation="http://www.springframework.org/schema/integration/stream http://www.springframework.org/schema/integration/stream/spring-integration-stream-4.3.xsd
+		http://www.springframework.org/schema/integration/xml http://www.springframework.org/schema/integration/xml/spring-integration-xml-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration/file http://www.springframework.org/schema/integration/file/spring-integration-file-4.3.xsd
+		http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms-4.3.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<bean id="teste" class="lab1.BeanTeste" />
+	
+	<int:channel id="entrada"/>
+	<int:channel id="processamento" />
+	<int:channel id="saida" />
+	
+	<int:header-value-router input-channel="entrada" header-name="tipo">
+		<int:mapping value="comum" channel="saida"/>
+		<int:mapping value="incomum" channel="processamento"/>
+	</int:header-value-router>
+	
+	<int-xml:xpath-transformer input-channel="processamento"
+	                           output-channel="saida"
+	                           xpath-expression="/weird" />
+
+    <int-stream:stdout-channel-adapter channel="saida" append-newline="true" />
+	
+</beans>
