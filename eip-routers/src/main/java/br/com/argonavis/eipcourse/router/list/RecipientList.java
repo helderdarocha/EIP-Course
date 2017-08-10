@@ -29,7 +29,7 @@ public class RecipientList implements MessageListener {
 		this.xmlChannel = (Destination) ctx.lookup("xml-channel");
 		this.allChannel = (Destination) ctx.lookup("all-channel");
 		this.inboundChannel = (Destination) ctx.lookup("inbound-channel");
-		
+
 		session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		MessageConsumer consumer = session.createConsumer(inboundChannel);
 		consumer.setMessageListener(this);
@@ -43,20 +43,20 @@ public class RecipientList implements MessageListener {
 			String type = message.getStringProperty("Type");
 			System.out.println("Received message: " + filename);
 
-			if (type != null && type.equals("png")) { 
+			if (type != null && type.equals("png")) {
 				routeMessage(imageChannel, message);
 				System.out.println("Routing " + filename + " to dt-queue-1");
-			} 
-			if (type != null && type.equals("txt") || type.equals("xml")) { 
+			}
+			if (type != null && type.equals("txt") || type.equals("xml")) {
 				routeMessage(textChannel, message);
 				System.out.println("Routing " + filename + " to dt-queue-2");
-			} 
-            if (type != null && type.equals("xml")) { 
-            	routeMessage(xmlChannel, message);
-            	System.out.println("Routing " + filename + " to dt-queue-3");
-			} 
-            routeMessage(allChannel, message);
-            System.out.println("Routing " + filename + " to all-queue");
+			}
+			if (type != null && type.equals("xml")) {
+				routeMessage(xmlChannel, message);
+				System.out.println("Routing " + filename + " to dt-queue-3");
+			}
+			routeMessage(allChannel, message);
+			System.out.println("Routing " + filename + " to all-queue");
 
 		} catch (JMSException e) {
 			e.printStackTrace();
@@ -64,21 +64,21 @@ public class RecipientList implements MessageListener {
 	}
 
 	public void routeMessage(Destination destination, Message message) throws JMSException {
-			MessageProducer producer = session.createProducer(destination);
-			producer.send(message);
+		MessageProducer producer = session.createProducer(destination);
+		producer.send(message);
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		Context ctx = new InitialContext();
 		ConnectionFactory factory = (ConnectionFactory) ctx.lookup("ConnectionFactory");
 		Connection con = factory.createConnection();
-		
+
 		RecipientList router = new RecipientList();
 		router.init(con);
-		
+
 		System.out.println("Waiting 60 seconds for messages...");
-        Thread.sleep(60000); // Will wait one minute for files
-        con.close();
+		Thread.sleep(60000); // Will wait one minute for files
+		con.close();
 	}
 
 }

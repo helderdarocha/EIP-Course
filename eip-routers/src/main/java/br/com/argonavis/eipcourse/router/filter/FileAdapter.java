@@ -53,7 +53,7 @@ public class FileAdapter {
  	        if(type.equals("xml") || type.equals("txt")) {
  	        	String data = readChars(file);
  	        	message = session.createTextMessage(data);
- 	        } else if (type.equals("png")) {
+ 	        } else if (type.equals("jpg")) {
  	        	byte[] data = readBytes(file);
  	        	message = session.createBytesMessage();
  	        	((BytesMessage)message).writeBytes(data);
@@ -78,7 +78,7 @@ public class FileAdapter {
 			@Override
 			public boolean accept(File dir, String name) {
 				return name.endsWith(".xml") 
-						|| name.endsWith(".png") 
+						|| name.endsWith(".jpg") 
                         || name.endsWith(".txt");
 			}
     	});

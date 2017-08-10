@@ -48,7 +48,7 @@ public class ContentBasedRouter implements MessageListener {
 			System.out.println("Inbound channel: Received message: " + type);
 			Destination destination;
 
-			if (type != null && type.equals("png")) { 
+			if (type != null && (type.equals("png"))) { 
 				destination = imageChannel;
 			} else if (type != null && type.equals("txt")) { 
 				destination = textChannel;
