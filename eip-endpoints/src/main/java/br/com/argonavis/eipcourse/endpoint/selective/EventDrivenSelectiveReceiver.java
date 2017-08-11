@@ -41,7 +41,7 @@ public class EventDrivenSelectiveReceiver implements MessageListener {
 		Context ctx = new InitialContext();
 		ConnectionFactory factory = (ConnectionFactory) ctx
 				.lookup("ConnectionFactory");
-		Destination from = (Destination) ctx.lookup("inbound");
+		Destination from = (Destination) ctx.lookup("inbound-queue");
 		Connection con = factory.createConnection();
 
 		System.out.println("Waiting for messages for 60 seconds... (^C to cancel)");

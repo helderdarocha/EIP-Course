@@ -18,8 +18,8 @@ public class JMSChannelBridge implements MessageListener {
 	private PayloadProcessor payloadProcessor;
 	private PropertiesProcessor propertiesProcessor;
 
-	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor payloadProcessor, PropertiesProcessor propertiesProcessor)
-			throws JMSException {
+	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor payloadProcessor,
+			PropertiesProcessor propertiesProcessor) throws JMSException {
 		System.out.println("Creating bridge from " + in + " to " + out);
 		this.payloadProcessor = payloadProcessor;
 		this.propertiesProcessor = propertiesProcessor;
@@ -29,17 +29,19 @@ public class JMSChannelBridge implements MessageListener {
 		consumer.setMessageListener(this);
 		con.start();
 	}
-	
-	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor payloadProcessor) throws JMSException {
-    	this(con, in, out, payloadProcessor, new PropertiesProcessor());
+
+	public JMSChannelBridge(Connection con, Destination in, Destination out, PayloadProcessor payloadProcessor)
+			throws JMSException {
+		this(con, in, out, payloadProcessor, new PropertiesProcessor());
 	}
-	
-	public JMSChannelBridge(Connection con, Destination in, Destination out, PropertiesProcessor propertiesProcessor) throws JMSException {
-    	this(con, in, out, new PayloadProcessor(), propertiesProcessor);
+
+	public JMSChannelBridge(Connection con, Destination in, Destination out, PropertiesProcessor propertiesProcessor)
+			throws JMSException {
+		this(con, in, out, new PayloadProcessor(), propertiesProcessor);
 	}
-	
-    public JMSChannelBridge(Connection con, Destination in, Destination out) throws JMSException {
-    	this(con, in, out, new PayloadProcessor(), new PropertiesProcessor());
+
+	public JMSChannelBridge(Connection con, Destination in, Destination out) throws JMSException {
+		this(con, in, out, new PayloadProcessor(), new PropertiesProcessor());
 	}
 
 	@Override
@@ -48,17 +50,16 @@ public class JMSChannelBridge implements MessageListener {
 			// Receive incoming message and extract data
 			Object payload = JMSUtils.extractPayload(incomingMessage);
 			Map<String, Object> properties = JMSUtils.getMessageProperties(incomingMessage);
-			
+
 			// Do something with the data
 			Object newPayload = payloadProcessor.process(payload);
 			Map<String, Object> newProperties = propertiesProcessor.process(properties);
-			
 
 			// Publish new outgoing message
 			Message outgoingMessage = JMSUtils.createMessageWithPayload(session, newPayload);
 			JMSUtils.setMessageProperties(outgoingMessage, newProperties);
 			producer.send(outgoingMessage);
-			
+
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}

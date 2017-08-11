@@ -61,10 +61,10 @@ public class PollingMessageReceiver {
 		Executor thread = Executors.newFixedThreadPool(2);
 		System.out.println("Waiting for messages... (^C to cancel)");
 		
-		PollingMessageReceiver receiver1 = new PollingMessageReceiver(con, from, "Receiver 1", 500);
+		PollingMessageReceiver receiver1 = new PollingMessageReceiver(con, from, "Receiver 1", 10000);
 		receiver1.run(thread);
 		
-		PollingMessageReceiver receiver2 = new PollingMessageReceiver(con, from, "Receiver 2", 1000);
+		PollingMessageReceiver receiver2 = new PollingMessageReceiver(con, from, "Receiver 2", 20000);
 		receiver2.run(thread);
 	}
 }

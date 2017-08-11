@@ -24,7 +24,7 @@ public class XPathFilter {
 	public void init() throws Exception {
 		dbf = DocumentBuilderFactory.newInstance();
         db = dbf.newDocumentBuilder(); 
-		XPath xpath = XPathFactory.newInstance().newXPath();
+		xpath = XPathFactory.newInstance().newXPath();
 	}
 
 	public String removeContents(String expr, String xmlText) throws Exception {

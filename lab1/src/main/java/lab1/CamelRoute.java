@@ -24,7 +24,7 @@ public class CamelRoute {
 	
 	public static void main(String[] args) throws Exception {
 		CamelContext context = new DefaultCamelContext();
-		context.start();
+		
 		
 		// 1) Cria a mensagem
 		Exchange exchange1 = new DefaultExchange(context);
@@ -40,6 +40,8 @@ public class CamelRoute {
 		ProducerTemplate template = context.createProducerTemplate();
 		template.send("seda:entrada", exchange1);
 		template.send("seda:entrada", exchange2);
+		
+		
 
         context.addRoutes(new RouteBuilder() {
 			@Override
@@ -58,9 +60,7 @@ public class CamelRoute {
 				
 				from("seda:processamento")
 				.process((e)->System.out.println("processamento: "+e.getIn().getBody()))
-				.process((e)->{
-
-				})
+				.setBody(xpath("/weird").stringResult())
 				.process((e)->System.out.println("filtrada: "+e.getIn().getBody()))
 				.to("seda:saida");
 				
@@ -68,9 +68,9 @@ public class CamelRoute {
 				.process((e)->System.out.println("resultado: "+e.getIn().getBody()));
 			}
         });
-        
-        
 
+        context.start();
+        context.stop();
 	}
 
 }

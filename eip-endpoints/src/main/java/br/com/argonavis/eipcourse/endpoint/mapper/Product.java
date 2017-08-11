@@ -5,7 +5,6 @@
 // Generated on: 2015.10.04 at 01:28:28 AM BRT 
 //
 
-
 package br.com.argonavis.eipcourse.endpoint.mapper;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for Product complex type.
+ * <p>
+ * Java class for Product complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Product">
@@ -37,53 +38,50 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Product", propOrder = {
-    "id",
-    "code",
-    "price"
-})
+@XmlType(name = "Product", propOrder = { "id", "code", "price" })
 @XmlRootElement
 public class Product {
 
-    protected long id;
-    @XmlElement(required = true)
-    protected String code;
-    protected double price;
-    
-    public Product() {}
-    
-    public Product(long id, String code, double price) {
-    	this.id = id;
-    	this.code = code;
-    	this.price = price;
-    }
+	protected long id;
+	@XmlElement(required = true)
+	protected String code;
+	protected double price;
 
-    public long getId() {
-        return id;
-    }
+	public Product() {
+	}
 
-    public void setId(long value) {
-        this.id = value;
-    }
+	public Product(long id, String code, double price) {
+		this.id = id;
+		this.code = code;
+		this.price = price;
+	}
 
-    public String getCode() {
-        return code;
-    }
+	public long getId() {
+		return id;
+	}
 
-    public void setCode(String value) {
-        this.code = value;
-    }
+	public void setId(long value) {
+		this.id = value;
+	}
 
-    public double getPrice() {
-        return price;
-    }
+	public String getCode() {
+		return code;
+	}
 
-    public void setPrice(double value) {
-        this.price = value;
-    }
-    
-    public String toString() {
-    	return "("+id+") " + code + " $" + price;
-    }
+	public void setCode(String value) {
+		this.code = value;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double value) {
+		this.price = value;
+	}
+
+	public String toString() {
+		return "(" + id + ") " + code + " $" + price;
+	}
 
 }
