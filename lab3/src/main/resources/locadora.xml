@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:int-file="http://www.springframework.org/schema/integration/file"
+	xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+	xmlns:int-stream="http://www.springframework.org/schema/integration/stream"
+	xmlns:int-xml="http://www.springframework.org/schema/integration/xml"
+	xsi:schemaLocation="http://www.springframework.org/schema/integration/stream http://www.springframework.org/schema/integration/stream/spring-integration-stream-4.3.xsd
+		http://www.springframework.org/schema/integration/xml http://www.springframework.org/schema/integration/xml/spring-integration-xml-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration/file http://www.springframework.org/schema/integration/file/spring-integration-file-4.3.xsd
+		http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms-4.3.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration-4.3.xsd">
+
+	<int:poller id="poller" default="true" fixed-rate="100" />
+
+	<int:channel id="in-csv-file">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-txt-file">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-xml-file">
+		<int:queue />
+	</int:channel>
+
+	<int:channel id="in-csv">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-xml">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-txt">
+		<int:queue />
+	</int:channel>
+
+	<int:channel id="in-csv-split">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-csv-line">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-csv-miles">
+		<int:queue />
+	</int:channel>
+	<int:channel id="in-csv-msg">
+		<int:queue />
+	</int:channel>
+	
+	<int:channel id="reading-xml">
+		<int:queue />
+	</int:channel>
+	<int:channel id="reading-split">
+		<int:queue />
+	</int:channel>
+	<int:channel id="reading-line">
+		<int:queue />
+	</int:channel>
+	<int:channel id="reading-data-line">
+		<int:queue />
+	</int:channel>
+	
+	<int:channel id="in-readings">
+		<int:queue />
+	</int:channel>
+	
+	<int:channel id="deslocamento-xml">
+		<int:queue />
+	</int:channel>
+	<int:channel id="deslocamento-split">
+		<int:queue />
+	</int:channel>
+	<int:channel id="deslocamento-line">
+		<int:queue />
+	</int:channel>
+	<int:channel id="deslocamento-data-line">
+		<int:queue />
+	</int:channel>
+
+	<int:channel id="in-msg">
+		<int:queue/>
+		<int:interceptors>
+			<int:wire-tap channel="log"></int:wire-tap>
+		</int:interceptors>
+	</int:channel>
+	
+	<int:channel id="out-total">
+		<int:queue />
+		<int:interceptors>
+			<int:wire-tap channel="result-log"></int:wire-tap>
+		</int:interceptors>
+	</int:channel>
+	
+	<int:channel id="invalid">
+		<int:queue />
+	</int:channel>
+
+	<int:logging-channel-adapter id="log" 
+	    expression="'headers={Placa: '+headers.Placa + ', Data: ' + headers.Data + '} payload='+payload"  
+	    logger-name="si" level="INFO" />
+	<int:logging-channel-adapter id="result-log" 
+	    expression="'total = ' + payload + ' km'"  
+	    logger-name="si" level="INFO" />
+
+	<int-file:inbound-channel-adapter 
+		directory="dados" id="in-file">
+		<int:poller fixed-rate="100" />
+	</int-file:inbound-channel-adapter>
+
+	<int:router input-channel="in-file" expression="payload.name.split('\.')[1]"
+		default-output-channel="invalid">
+		<int:mapping value="xml" channel="in-xml-file" />
+		<int:mapping value="txt" channel="in-txt-file" />
+		<int:mapping value="csv" channel="in-csv-file" />
+	</int:router>
+
+	<int:header-enricher input-channel="in-txt-file"
+		output-channel="in-txt">
+		<int:header name="Placa" expression="payload.name.split('_')[0]" />
+		<int:header name="Data"
+			expression="payload.name.split('_')[1].split('\.')[0]" />
+		<int:header name="Group" expression="'all'" />
+	</int:header-enricher>
+ 
+	<int-file:file-to-string-transformer
+		input-channel="in-txt" output-channel="in-msg" /> 
+	<!-- Neste ponto todos os arquivos TXT foram normalizados -->
+
+	<int-file:file-to-string-transformer
+		input-channel="in-csv-file" output-channel="in-csv" />
+
+	<int:splitter input-channel="in-csv" output-channel="in-csv-split" >
+		<bean class="lab3.LineSplitter" />
+	</int:splitter>
+
+	<int:filter input-channel="in-csv-split" output-channel="in-csv-line"
+		expression="payload != 'vehicle,date,miles'" />
+
+	<int:header-enricher input-channel="in-csv-line"
+		output-channel="in-csv-miles">
+		<int:header name="Placa" expression="payload.split(',')[0]" />
+		<int:header name="Data" expression="payload.split(',')[1]" />
+		<int:header name="Group" expression="'all'" />
+	</int:header-enricher>
+
+	<int:transformer input-channel="in-csv-miles"
+		output-channel="in-csv-msg" expression="payload.split(',')[2]" />
+		
+	<int:transformer input-channel="in-csv-msg"
+		output-channel="in-msg" expression="new Double(payload).doubleValue() * 1.609" />	
+	<!-- Neste ponto todos os arquivos TXT e CSV foram normalizados -->
+	
+	<int-file:file-to-string-transformer input-channel="in-xml-file" output-channel="in-xml"/> 
+
+	<!-- Roteamento de mensagens XML por tipo -->
+	<int-xml:xpath-router input-channel="in-xml" default-output-channel="invalid" evaluate-as-string="true">
+		<int-xml:xpath-expression expression="local-name(/*)"/>
+		<int-xml:mapping value="vehicle" channel="reading-xml"/>
+		<int-xml:mapping value="deslocamentos" channel="deslocamento-xml"/>
+	</int-xml:xpath-router>
+
+	<int-xml:xpath-header-enricher input-channel="deslocamento-xml" output-channel="deslocamento-split">
+		<int-xml:header name="Placa" xpath-expression="/deslocamentos/@id" overwrite="true"/>
+		<int-xml:header name="Group" xpath-expression="'all'" />
+	</int-xml:xpath-header-enricher>
+	
+    <int-xml:xpath-splitter input-channel="deslocamento-split" output-channel="deslocamento-line" >
+        	<int-xml:xpath-expression expression="/deslocamentos/*"/>
+    </int-xml:xpath-splitter>
+    
+	<int-xml:xpath-header-enricher input-channel="deslocamento-line" output-channel="deslocamento-data-line">
+		<int-xml:header name="Data" xpath-expression="/deslocamento/@data" overwrite="true"/>
+	</int-xml:xpath-header-enricher>
+	
+	<int-xml:xpath-transformer input-channel="deslocamento-data-line" output-channel="in-msg" 
+	     xpath-expression="/deslocamento"/>  
+	<!-- Neste ponto todos os arquivos TXT, CSV e "XML-deslocamentos" foram normalizados -->
+
+	<int-xml:xpath-header-enricher input-channel="reading-xml" output-channel="reading-split">
+		<int-xml:header name="Placa" xpath-expression="/vehicle/@id" overwrite="true"/>
+		<int-xml:header name="Group" xpath-expression="'all'" />
+	</int-xml:xpath-header-enricher>
+	
+    <int-xml:xpath-splitter input-channel="reading-split" output-channel="reading-line">
+        	<int-xml:xpath-expression expression="/vehicle/*"/>
+    </int-xml:xpath-splitter>
+    
+	<int-xml:xpath-header-enricher input-channel="reading-line" output-channel="reading-data-line">
+		<int-xml:header name="Data" xpath-expression="/reading/@date" overwrite="true"/>
+	</int-xml:xpath-header-enricher>
+	
+    <int-xml:xpath-transformer input-channel="reading-data-line" output-channel="in-msg" 
+	     xpath-expression="number(/reading/@after) - number(/reading/@before)"/> 
+	<!-- Neste ponto todos os arquivos foram normalizados e têm a estrutura:
+	     headers={Placa, Data}, payload={distancia-em-km} -->
+	     
+	<!-- Agregador para somar todos os valores: 10 segundos depois da ultima mensagem -->
+	<int:aggregator correlation-strategy-expression="headers['Group']" 
+	                release-strategy-expression="false" group-timeout="10000" 
+	                send-partial-result-on-expiry="true" method="add"
+	                input-channel="in-msg" output-channel="out-total">
+	     <bean class="lab3.SumAggregator" />
+	</int:aggregator>  
+
+</beans>

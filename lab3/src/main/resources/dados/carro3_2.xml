@@ -1,0 +1,7 @@
+<vehicle id="DLC-9992">
+   <reading date="2016-12-04" before="12345" after="12456"/>
+   <reading date="2016-12-05" before="12456" after="12577"/>
+   <reading date="2016-12-06" before="12577" after="12691"/>
+   <reading date="2016-12-27" before="13371" after="13499"/>
+   <reading date="2016-12-28" before="13499" after="13639"/>
+</vehicle>
