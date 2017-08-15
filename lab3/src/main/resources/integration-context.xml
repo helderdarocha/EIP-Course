@@ -130,7 +130,7 @@
 		input-channel="in-csv-file" output-channel="in-csv" />
 
 	<int:splitter input-channel="in-csv" output-channel="in-csv-split" >
-		<bean class="lab3.LineSplitter" />
+		<bean class="lab3.spring.LineSplitter" />
 	</int:splitter>
 
 	<int:filter input-channel="in-csv-split" output-channel="in-csv-line"
@@ -196,10 +196,10 @@
 	     
 	<!-- Agregador para somar todos os valores: 10 segundos depois da ultima mensagem -->
 	<int:aggregator correlation-strategy-expression="headers['Group']" 
-	                release-strategy-expression="false" group-timeout="10000" 
+	                release-strategy-expression="false" group-timeout="5000" 
 	                send-partial-result-on-expiry="true" method="add"
 	                input-channel="in-msg" output-channel="out-total">
-	     <bean class="lab3.SumAggregator" />
+	     <bean class="lab3.spring.SumAggregator" />
 	</int:aggregator>  
 
 </beans>

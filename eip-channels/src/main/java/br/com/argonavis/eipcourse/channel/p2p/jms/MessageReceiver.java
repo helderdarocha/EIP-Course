@@ -5,9 +5,9 @@ import java.util.concurrent.Executors;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageConsumer;
-import javax.jms.Queue;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.Context;
@@ -17,7 +17,7 @@ import javax.naming.NamingException;
 public class MessageReceiver {
 	
 	private ConnectionFactory factory;
-	private Queue queue;
+	private Destination queue;
 	
 	private String name;
 	private long delay;
@@ -30,7 +30,7 @@ public class MessageReceiver {
 	public void init() throws NamingException {
 		Context ctx = new InitialContext();
 		this.factory = (ConnectionFactory)ctx.lookup("ConnectionFactory");
-		this.queue = (Queue)ctx.lookup("simple-p2p-channel");
+		this.queue = (Destination)ctx.lookup("simple-p2p-channel");
 	}
 	
 	public void receiveJms11() {
@@ -60,17 +60,25 @@ public class MessageReceiver {
 	}
 
 	public static void main(String[] args) throws NamingException {
-		Executor thread = Executors.newFixedThreadPool(2);
+		Executor thread = Executors.newFixedThreadPool(4);
 		
 		System.out.println("Waiting for messages... (^C to cancel)");
 		
-		MessageReceiver receiver1 = new MessageReceiver("Receiver 1", 500);
+		MessageReceiver receiver1 = new MessageReceiver("Receiver 1", 1500);
 		receiver1.init();
 		receiver1.run(thread);
 		
 		MessageReceiver receiver2 = new MessageReceiver("Receiver 2", 1000);
 		receiver2.init();
 		receiver2.run(thread);
+		
+		MessageReceiver receiver3 = new MessageReceiver("Receiver 3", 200);
+		receiver3.init();
+		receiver3.run(thread);
+		
+		MessageReceiver receiver4 = new MessageReceiver("Receiver 4", 500);
+		receiver4.init();
+		receiver4.run(thread);
 		
 	}
 

@@ -1,4 +1,4 @@
-package lab3;
+package lab3.spring;
 
 import java.util.List;
 

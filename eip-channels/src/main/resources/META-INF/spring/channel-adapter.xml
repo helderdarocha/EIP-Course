@@ -18,15 +18,22 @@
     <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
         <constructor-arg ref="amqConnectionFactory" />
     </bean>
-
+    
+    	<int:channel id="inbound">
+		<int:interceptors>
+	        <int:wire-tap channel="logger"/>
+	    </int:interceptors>
+	</int:channel>
 	
+	<int:channel id="logger" />
+
 	<int-file:inbound-channel-adapter directory="/tmp/jms/inbox" 
 	                                  channel="inbound">
 		<int:poller fixed-rate="5000" />
 	</int-file:inbound-channel-adapter>
 	
-	<int-jms:outbound-channel-adapter id="inbound" destination-name="inbound-queue"/>
-	
-	<int-stream:stdout-channel-adapter channel="inbound" append-newline="true" />
+	<int-jms:outbound-channel-adapter channel="inbound" destination-name="inbound-queue" />
+
+	<int-stream:stdout-channel-adapter channel="logger" append-newline="true" />
 	
 </beans>

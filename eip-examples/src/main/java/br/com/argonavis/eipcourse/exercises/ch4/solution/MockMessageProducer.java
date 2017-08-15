@@ -15,8 +15,6 @@ import javax.naming.InitialContext;
 
 import org.apache.activemq.Message;
 
-import br.com.argonavis.eipcourse.exercises.utils.MockData;
-
 public class MockMessageProducer {
 
 	private Connection con;

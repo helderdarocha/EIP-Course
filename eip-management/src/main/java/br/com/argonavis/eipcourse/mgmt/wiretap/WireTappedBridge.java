@@ -2,7 +2,7 @@ package br.com.argonavis.eipcourse.mgmt.wiretap;
 
 import java.io.File;
 import java.util.List;
-import java.util.Map;
+import javax.jms.Queue;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -24,14 +24,17 @@ public class WireTappedBridge {
 			Destination fromChannel = (Destination) ctx.lookup("in-channel");
 			Destination toChannel   = (Destination) ctx.lookup("out-channel");
 			Destination wireTap     = (Destination) ctx.lookup("wiretap");
-			/*
+			
 			FileInboundAdapter adapter = new FileInboundAdapter(con, fromChannel, new File(FileInboundAdapter.INBOX), false);
 			List<File> files = adapter.loadFiles();
 			if (!files.isEmpty()) {
 				List<Message> messages = adapter.createMessages(files);
 				adapter.send(messages);
 			}
-			*/
+			
+			BrowsingWireTap browser = new BrowsingWireTap(con, (Queue)fromChannel);
+			browser.browse();
+			
 			new WireTap(con, fromChannel, toChannel, wireTap);
 
 			new FileOutboundAdapter(con, toChannel, new File(FileOutboundAdapter.OUTBOX));

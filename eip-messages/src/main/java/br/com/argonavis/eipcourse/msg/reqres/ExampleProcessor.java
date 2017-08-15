@@ -17,7 +17,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 public class ExampleProcessor<T> {
-    public String process(TextMessage message) {
+	public String process(TextMessage message) {
     	try {
 			String xmlText = message.getText();
 			

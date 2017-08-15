@@ -27,8 +27,11 @@ public class FileAdapter {
             @Override
             public void configure() throws Exception {
                 this.from("file:///tmp/jms/inbox") 
-                    .process((e)->System.out.println("Copiando " + e.getIn().getHeader("CamelFileName")))
-                    .to("jms:queue:inbound-queue");
+                .wireTap("direct:log")
+                .to("jms:queue:inbound-queue");
+                
+                from("direct:log")
+                .process((e)->System.out.println("Copiando " + e.getIn().getHeader("CamelFileName")));
             }
         });
         context.start();

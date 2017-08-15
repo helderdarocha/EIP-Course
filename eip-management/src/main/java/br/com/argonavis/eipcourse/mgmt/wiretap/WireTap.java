@@ -21,6 +21,7 @@ public class WireTap implements MessageListener {
 	
 	public WireTap(Connection con, Destination inChannel, Destination outChannel, Destination wireTap) throws JMSException {
 		this.outChannel = outChannel;
+		this.wireTapChannel = wireTap;
 		session = con.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		MessageConsumer consumer = session.createConsumer(inChannel);
 		consumer.setMessageListener(this);

@@ -4,9 +4,9 @@ import java.util.Date;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageProducer;
-import javax.jms.Queue;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.Context;
@@ -16,12 +16,12 @@ import javax.naming.NamingException;
 public class MessageSender {
 	
 	private ConnectionFactory factory;
-	private Queue queue;
+	private Destination queue;
 
 	public void init() throws NamingException {
 		Context ctx = new InitialContext();
 		this.factory = (ConnectionFactory)ctx.lookup("ConnectionFactory");
-		this.queue = (Queue)ctx.lookup("simple-p2p-channel");
+		this.queue = (Destination)ctx.lookup("simple-p2p-channel");
 	}
 	
 	public void sendJms11() {
