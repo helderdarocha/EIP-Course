@@ -1,0 +1,215 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/access/AccessControl.sol";
+
+/**
+ * InterbankLiabilityRegistry (Record Only)
+ *
+ * PURPOSE:
+ * - Record interbank liabilities only (no settlement, no token movement)
+ * - Enforce bilateral credit limits
+ * - Track outstanding exposure
+ *
+ * ROLES:
+ * - DEFAULT_ADMIN_ROLE : governance / role management
+ * - ADMIN_ROLE         : operational control
+ *      - add/remove banks
+ *      - record liabilities
+ * - BANK_ROLE          : bank agents (debtor / creditor identities)
+ *      - set credit limits
+ *
+ * MODEL:
+ * - creditLimit[debtor][creditor][currency] = max outstanding allowed
+ * - exposure[debtor][creditor][currency]    = current outstanding
+ */
+contract InterbankLiabilityRegistry is AccessControl {
+    bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
+    bytes32 public constant BANK_ROLE  = keccak256("BANK_ROLE");
+
+    constructor(address[] memory admins, address[] memory bankAgents) {
+        _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
+
+        for (uint256 i = 0; i < admins.length; i++) {
+            require(admins[i] != address(0), "BAD_ADMIN");
+            _grantRole(ADMIN_ROLE, admins[i]);
+        }
+
+        for (uint256 i = 0; i < bankAgents.length; i++) {
+            require(bankAgents[i] != address(0), "BAD_BANK");
+            _grantRole(BANK_ROLE, bankAgents[i]);
+        }
+    }
+
+    // -----------------------------
+    // Bank management (ADMIN_ROLE)
+    // -----------------------------
+    event BankAdded(address indexed bankAgent);
+    event BankRemoved(address indexed bankAgent);
+
+    function addBank(address bankAgent) external onlyRole(ADMIN_ROLE) {
+        require(bankAgent != address(0), "BAD_BANK");
+        _grantRole(BANK_ROLE, bankAgent);
+        emit BankAdded(bankAgent);
+    }
+
+    function removeBank(address bankAgent) external onlyRole(ADMIN_ROLE) {
+        _revokeRole(BANK_ROLE, bankAgent);
+        emit BankRemoved(bankAgent);
+    }
+
+    function isBank(address bankAgent) public view returns (bool) {
+        return hasRole(BANK_ROLE, bankAgent);
+    }
+
+    // -----------------------------
+    // Credit limits & exposure
+    // -----------------------------
+    /**
+     * Dimension order:
+     * debtorAgent → creditorAgent → currency → amount
+     *
+     * creditLimit:
+     * - Maximum outstanding amount allowed from debtor to creditor in a given currency
+     */
+    mapping(address => mapping(address => mapping(bytes32 => int256))) public creditLimit;
+
+    /**
+     * exposure:
+     * - Current outstanding amount from debtor to creditor in a given currency
+     */
+    mapping(address => mapping(address => mapping(bytes32 => int256))) public exposure;
+
+    event CreditLimitSet(
+        address indexed debtorAgent,
+        address indexed creditorAgent,
+        bytes32 indexed currency,
+        int256 limit
+    );
+
+    /**
+     * Credit limit is set by BANK_ROLE
+     */
+    function setCreditLimit(
+        address debtorAgent,
+        address creditorAgent,
+        bytes32 currency,
+        int256 limit
+    ) external onlyRole(BANK_ROLE) {
+        require(isBank(debtorAgent) && isBank(creditorAgent), "NOT_A_BANK");
+        require(limit >= 0, "LIMIT_NEGATIVE");
+
+        int256 currentExposure = exposure[debtorAgent][creditorAgent][currency];
+        require(limit >= currentExposure, "LIMIT_BELOW_EXPOSURE");
+
+        creditLimit[debtorAgent][creditorAgent][currency] = limit;
+        emit CreditLimitSet(debtorAgent, creditorAgent, currency, limit);
+    }
+
+    function availableCredit(
+        address debtorAgent,
+        address creditorAgent,
+        bytes32 currency
+    ) external view returns (int256 limit, int256 used, int256 available) {
+        limit = creditLimit[debtorAgent][creditorAgent][currency];
+        used  = exposure[debtorAgent][creditorAgent][currency];
+        available = limit - used;
+    }
+
+    // -----------------------------
+    // Liability records (immutable)
+    // -----------------------------
+    struct Liability {
+        bytes32 id;
+        address debtorAgent;
+        address creditorAgent;
+        uint256 amount;
+        bytes32 currency;
+        bytes32 batchId;
+    }
+
+    mapping(bytes32 => Liability) private liabilities;
+
+    event LiabilityRecorded(
+        bytes32 indexed id,
+        address indexed debtorAgent,
+        address indexed creditorAgent,
+        uint256 amount,
+        bytes32 indexed currency,
+        bytes32 batchId,
+        int256 newExposure,
+        int256 limit
+    );
+
+    /**
+     * recordLiability
+     * - One-way record
+     * - Enforces creditLimit and updates exposure
+     * - Stores immutable record (no settlement)
+     */
+    function recordLiability(
+        bytes32 id,
+        address debtorAgent,
+        address creditorAgent,
+        uint256 amount,
+        bytes32 currency,
+        bytes32 batchId
+    ) external onlyRole(ADMIN_ROLE) {
+        require(id != bytes32(0), "ID_REQUIRED");
+        require(isBank(debtorAgent) && isBank(creditorAgent), "NOT_A_BANK");
+        require(amount > 0, "AMOUNT_REQUIRED");
+        require(liabilities[id].id == bytes32(0), "DUPLICATE_ID");
+
+        int256 limit = creditLimit[debtorAgent][creditorAgent][currency];
+        require(limit > 0, "NO_CREDIT_LIMIT");
+
+        int256 currentExposure = exposure[debtorAgent][creditorAgent][currency];
+        int256 delta = int256(amount);
+        require(currentExposure + delta <= limit, "CREDIT_LIMIT_EXCEEDED");
+
+        int256 newExposure = currentExposure + delta;
+        exposure[debtorAgent][creditorAgent][currency] = newExposure;
+
+        liabilities[id] = Liability({
+            id: id,
+            debtorAgent: debtorAgent,
+            creditorAgent: creditorAgent,
+            amount: amount,
+            currency: currency,
+            batchId: batchId
+        });
+
+        emit LiabilityRecorded(
+            id,
+            debtorAgent,
+            creditorAgent,
+            amount,
+            currency,
+            batchId,
+            newExposure,
+            limit
+        );
+    }
+
+    function getLiability(bytes32 id) external view returns (Liability memory) {
+        Liability memory l = liabilities[id];
+        require(l.id != bytes32(0), "NOT_FOUND");
+        return l;
+    }
+}
+
+
+////
+Whitelist the bank agent addresses (debtor/creditor agents).
+	•	Store bilateral credit limits as:
+limits[debtorAgent][creditorAgent][currency] = int256(limit)
+	•	Track current exposure / outstanding as:
+exposure[debtorAgent][creditorAgent][currency] = int256(currentOutstanding)
+	•	When the debtor emits the token-escrow event, your Orchestrator observes it and calls the registry passing:
+	•	debtorAgent
+	•	creditorAgent
+	•	amount
+	•	currency
+
+The contract verifies:
+exposure + amount <= limit and then records the interbank liability.
